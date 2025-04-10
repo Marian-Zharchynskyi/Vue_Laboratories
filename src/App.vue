@@ -11,8 +11,15 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-app-bar app fixed elevation="0" class="bg-image">
+    <v-app-bar
+        app
+        fixed
+        color="transparent"
+        elevation="0"
+        class="bg-image"
+    >
       <v-app-bar-nav-icon variant="text" @click="drawer = !drawer"></v-app-bar-nav-icon>
+
       <v-app-bar-title>Lab2</v-app-bar-title>
     </v-app-bar>
 
@@ -28,7 +35,7 @@ import {ref} from 'vue'
 const drawer = ref(true)
 const items = ref([
   {title: 'List', icon: 'mdi-format-list-checks', to: '/'},
-  {title: 'Contact', icon: 'mdi-email', to: '/about'}
+  {title: 'Contact', icon: 'mdi-email', to: '/about'},
 ])
 </script>
 
